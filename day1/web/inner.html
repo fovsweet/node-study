@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>day1</title>
+    <meta charset="utf-8">
+</head>
+
+<body>
+</body>
+<script type="text/javascript" src='jquery.js'></script>
+<script type="text/javascript">
+// $.ajax({
+//     url: '/day1',
+//     type: 'post',
+//     data: {},
+//     success: function(data) {
+//         console.log(data)
+//     }
+// })
+var isType = function(type) {
+    return function(obj) {
+        return Object.prototype.toString.call(obj) == '[object ' + type + ']';
+    }
+}
+
+console.log(isType('String'))
+</script>
+
+</html>
